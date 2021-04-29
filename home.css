@@ -1,0 +1,110 @@
+/* card start */
+.block-card{
+    padding: 50px 92px;
+}
+.card-title{
+    font-size: 20px;
+    position: relative;
+}
+.block-card li{
+    width: 33.33%;
+}
+.card-title .line {
+    width: 20%;
+    border-top: 1px solid #3D1101;
+    position: absolute;
+}
+.line-left{
+    left:15%;
+}
+.line-right{
+    right:15%;
+}
+
+@media screen and (max-width:768px){
+    .block-card{
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 569px) {
+    .card-title .line{
+        display: none;
+    }
+    .card-body ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-body li{
+        padding: 30px;
+        width: 100%;
+    }
+}
+
+/* card end */
+
+
+/* content start */
+.block-content{
+    padding: 0 25px;
+}
+.content-img{
+    width: 50%;
+}
+.content-desc{
+    width: 50%;
+    padding: 80px 50px 80px 25px;
+}
+@media screen and (max-width: 768px) {
+    .content-img{
+        align-self:center;
+    }
+}
+@media screen and (max-width: 569px) {
+    .block-content{
+        padding: 0;
+    }
+    .content-body{
+        flex-direction: column;
+    }
+    .content-img{
+        width: 100%;
+    }
+    .content-desc{
+        width: 100%;
+        padding: 30px;
+    }
+}
+/* content end */
+
+
+/* map start */
+.content-title{
+    font-size: 24px;
+}
+.block-form{
+    width: 100%;
+}
+.block-form > label{
+    margin-bottom: 11px;
+}
+.block-form > input{
+    margin-bottom: 17px;
+    padding: 8px;
+    width: 100%;
+}
+.btn{
+    padding: 2px 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #000;
+}
+
+@media screen and (max-width:569px) {
+    .block-form{
+        margin-top: 20px;
+    }
+}
+/* map end */
+

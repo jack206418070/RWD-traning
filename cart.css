@@ -1,0 +1,288 @@
+.block-content{
+    padding: 50px;
+}
+
+.block-menu{
+    width: 20%;
+}
+
+
+/* product menu start */
+.menu-body{
+    font-size: 14px;
+}
+
+.menu-body li a{
+    display: block;
+    padding: 5px;
+    color: #3D1101;
+    border-bottom: 1px solid #3D1101;
+}
+
+.menu-body a:hover{
+    background-color: #3D1101;
+    color:white;
+}
+
+.menu-body a.active{
+    background-color: #3D1101;
+    color:white;
+}
+
+@media screen and (max-width:569px) {
+    .block-content{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .block-menu{
+        width: 100%;
+        margin-bottom: 23px;
+    }
+    
+}
+/* product menu end */
+
+
+
+
+.content-body{
+    width: 80%;
+}
+
+
+/* search bar top start*/
+.content-top input{
+    padding: 0 10px;
+    height: 32px;
+    width: 70%;
+    border: 2px solid #3D1101;
+    outline: none;
+}
+
+.content-top .search{
+    width: 70%;
+    position: relative;
+}
+
+.content-top .search i{
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    background-color: #3D1101;
+    text-align: center;
+    line-height: 32px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    padding:0 10px;
+    border-right: 1px solid #3D1101;
+    cursor: pointer;
+}
+
+.cart p:hover{
+    color: #fff;
+    background-color: #3D1101;
+}
+
+.cart i{
+    font-size: 24px;
+    padding:0 10px;
+    cursor: pointer;
+}
+
+.cart::before{
+    content:'1';
+    font-size: 12px;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #db4437;
+    top: -5px;
+    right: 1%;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+.content-top .cart{
+    width: 30%;
+}
+@media screen and (max-width:569px) {
+    .content-body{
+        width: 100%;
+    }
+    .content-top{
+        flex-wrap: wrap;
+    }
+    .content-top .search{
+        width: 100%;
+        margin-bottom: 23px;
+    }
+    .content-top input{
+        width: 100%;
+    }
+    .content-top .cart{
+        width: 100%;
+    }
+    .content-top .search i{
+        right: 0%;
+    }
+}
+/* search bar top end*/
+
+
+/* cart start */
+.content-inner li{
+    width: 31%;
+    box-shadow: 3px 2px 2px silver;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.content-inner li img{
+    margin-bottom: 10px;
+}
+
+
+.content-inner li hr{
+    width: 50%;
+    height: 1px;
+    text-align: center;
+    background-color: #3D1101;
+    position: absolute;
+    left: 25%;
+}
+
+.price{
+    font-size: 18px;
+    font-family: Roboto-Light;
+    font-weight: bold;
+}
+
+
+
+.btn{
+    margin: 0 auto;
+    width: 90%;
+    padding: 3px 0;
+    border: 1px solid #ff5e45;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: .7s;
+}
+.btn i{
+    margin-right: 2px;
+}
+.btn:hover{
+    background-color: #ff5e45;
+    color:white;
+}
+
+.heart{
+    position: absolute;   
+    color:white;
+    font-size: 18px; 
+    font-weight: 400;
+    left: 2%;
+    top: 2%;
+    cursor: pointer;
+}
+
+.heart:hover{
+    font-weight: bold;
+}
+
+.heart.active{
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+    .content-inner li{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width:569px) {
+    .content-inner li{
+        width: 100%;
+    }
+    .content-inner li{
+        font-size: 20px;
+    }
+    .heart{
+        left: 15%;
+        top: 5%;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .heart{
+        left: 22%;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width:411px) {
+    .heart{
+        left: 10%;
+        top: 5%;
+    }
+}
+
+/* cart end */
+
+
+
+.ribbon-wrap{
+    width: 106px;
+    height: 108px;
+    overflow: hidden;
+    /* 當超過width和height的大小就隱藏 */
+  
+    position: absolute;
+    top: -7px;
+    right: -7px;
+}
+.ribbon {
+    position: relative;
+    left: -11px;
+    top: 26px;
+    width: 148px;
+    background-color: #87ceeb;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+    transform: rotate(45deg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ribbon:before {
+    content: "";
+    border-top: 4px solid #795548;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+.ribbon:after {
+    content: "";
+    border-top: 4px solid #795548;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+}
