@@ -18,7 +18,8 @@ img{
 
 .container{
     position: relative;
-    max-width: 1024px;
+    width: 100%;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -29,7 +30,7 @@ img{
     height: 50px;
     width: 50px;
     position: fixed;
-    bottom: 5%;
+    bottom: 0;
     right: 5%;
     background-color: gray;
     font-size: 45px;
@@ -60,7 +61,7 @@ img{
 }
 
 .block-header{
-    max-width: 1024px;
+    max-width: 1920px;
     background-color: #000000;
     padding: 16px 42px;
 }
